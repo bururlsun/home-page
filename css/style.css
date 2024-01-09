@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "Satoshi";
+    src: url(../fonts/Satoshi-Regular.woff);
+    font-weight: 400;
+}
+body {
+    font-family: "Satoshi";
+    margin: 0;
+}
+.container {
+    width: 1300px;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__top1 {
+    display: none;
+}
+.header__hr {
+    max-width: 100%;
+}
+
+.header__main {
+    margin: 20px 0 0 0;
+    justify-content: center;
+    gap: 30px;
+    display: flex;
+}
+.header__main-title {
+    text-decoration: none;
+    color: #726e8d;
+    font-size: 16px;
+    font-weight: 400;
+}
+@media screen and (max-width: 735px) {
+    .container {
+        width: 735px;
+    }
+    .header__top {
+        display: none;
+    }
+    .header__top1 {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
+        gap: 500px;
+    }
+    .header__hr {
+        display: none;
+    }
+    .header__main {
+        display: none;
+    }
+}
