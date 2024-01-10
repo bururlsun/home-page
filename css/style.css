@@ -8,13 +8,17 @@ body {
     margin: 0;
 }
 .container {
-    width: 1300px;
+    max-width: 1200px;
     margin: 0 auto;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+}
+.header {
+    margin-top: 50px;
 }
 .header__top {
     display: flex;
     justify-content: space-between;
+    width: 1200px;
 }
 
 .header__top1 {
@@ -29,6 +33,7 @@ body {
     justify-content: center;
     gap: 30px;
     display: flex;
+    width: 1200px;
 }
 .header__main-title {
     text-decoration: none;
@@ -36,10 +41,92 @@ body {
     font-size: 16px;
     font-weight: 400;
 }
-@media screen and (max-width: 735px) {
-    .container {
-        width: 735px;
-    }
+
+.hero {
+    margin-top: 60px;
+}
+.hero__top {
+    width: 680px;
+    background: #2a254b;
+}
+.hero__head {
+    padding: 30px 60px;
+}
+.hero__info {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+}
+
+.hero__top-title {
+    color: var(--White, #fff);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.hero__btn {
+    background: rgba(249, 249, 249, 0.15);
+    display: flex;
+    padding: 16px 32px;
+    align-items: flex-start;
+    gap: 10px;
+    color: var(--White, #fff);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    border-color: transparent;
+    margin-top: 50px;
+}
+.hero__text {
+    color: var(--White, #fff);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    /* width: 580px; */
+    margin-top: 196px;
+}
+
+.hero__btns {
+    text-align: center;
+}
+
+.hero__info1 {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.hero__top1 {
+    padding-left: 30px;
+    background: #2a254b;
+    width: 400px;
+}
+.hero__top-title1 {
+    color: var(--White, #fff);
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.hero__top-text1 {
+    color: var(--White, #fff);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-top: 80px;
+}
+.hero__top-btn1 {
+    background: rgba(249, 249, 249, 0.15);
+    display: flex;
+    width: 342px;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-color: transparent;
+    color: #ffffff;
+    margin: 32px 0;
+}
+@media screen and (max-width: 850px) {
     .header__top {
         display: none;
     }
@@ -47,12 +134,23 @@ body {
         display: inline-block;
         display: flex;
         justify-content: center;
-        gap: 500px;
+        gap: 300px;
     }
     .header__hr {
         display: none;
     }
     .header__main {
         display: none;
+    }
+    .hero__main {
+        display: none;
+    }
+    .hero__info {
+        display: none;
+    }
+    .hero__info1 {
+        display: inline-block;
+        display: flex;
+        justify-content: center;
     }
 }
